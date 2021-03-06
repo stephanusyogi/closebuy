@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Close Buy</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet/less" type="text/css"  href="./assets/css/advisor.less">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- LESS -->
+    <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/922eb8e20d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- Section Menu -->
+    <section class="section-menu">
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/logo_green.png" height="30" alt="">
+            </a>
+            <div class="d-flex align-items-center">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item nav-hover">
+                        <a class="nav-link" href="listing.html">Listing
+                        </a>
+                    </li>
+                    <li class="nav-item nav-hover">
+                        <a class="nav-link" href="wanted.html">Wanted
+                        </a>
+                    </li>
+                    <li class="nav-item nav-hover mr-5">
+                        <a class="nav-link" href="project.html">Project</a>
+                    </li>
+                    <li class="nav-item nav-hover">
+                        <a class="nav-link" href="event.html">Event</a>
+                    </li>
+                    <li class="nav-item nav-hover mr-5">
+                        <a class="nav-link" href="newsletter.html">Newsletter</a>
+                    </li>
+                    <li class="nav-item nav-dropdown mr-3">
+                        <div class="dropdown">
+                            <a href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="nav-dropdown-3" class="nav-link dropdown-toggle">Advisor&nbsp;</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Find Advisor</a>
+                                <a class="dropdown-item" href="joinus.html">Join Us</a>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="nav-item vertical mr-3"></div>
+                    <div class="nav-item">
+                        <button type="button" class="btn btn-success mr-2" data-toggle="modal" data-target="#exampleModalCenter">Login</button>
+                    </div>
+                    <div class="nav-item">
+                        <div class="toggle-switch switch-vertical swit">
+                            <input id="toggle-a" type="radio" name="switch" checked="checked" value="EN">
+                            <input id="toggle-b" type="radio" name="switch" value="id">
+                            <span class="toggle-outside swit">
+                                <span class="toggle-inside">id</span>
+                            </span>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Modal Login -->
+    <div class="modal fade modal-login" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <h2>Login</h2>
+                </div>
+                <div class="form-login">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Password">
+                    <button type="submit">Login</button>
+                </div>
+                <div class="break">
+                    <p>or login using</p>
+                </div>
+                <div class="btn-login">
+                    <button type="submit" class="blue-btn"><span><img src="https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/7_79vIap6SX.png?_nc_eui2=AeG5p9VNxCAZOCo-5K-eCIb1FL_YvFYdMLEUv9i8Vh0wsaWaE4nakYnuuNcGv6wfmgeeWxrFBo3x2XmuQ2gm0zjm" width="20" height="20" alt=""></span> Login</button>
+                    <button type="submit" class="white-btn"><span><img src="https://cdn.icon-icons.com/icons2/2119/PNG/512/google_icon_131222.png" height="20" width="20" alt=""></span> Masuk</button>
+                    <button type="submit" class="purple-btn"><span><img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/yahoo.png" height="20" alt=""></span> Login</button>
+                </div>
+                <div class="footer text-center">
+                    <a href="#">Forgot Password ?</a>
+                    <p>No Account ?</p>
+                    <p><span><a href="#">Register Now</a></span>&nbsp;for free</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Section Jumbotron -->
+    <section class="jumbotron">
+        <div class="text-center">
+            <h1>Find Agent</h1>
+        </div>
+    </section>    
+
+    <!-- Section Main -->
+    <section class="section-main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <h3>Filter</h3>
+                    <h2><b>Province</b></h2>
+                    <ul class="sidenav">
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>DKI Jakarta</button>
+                            <div class="dropdown-container">
+                                <a href="#">Jakarta Utara</a>
+                                <a href="#">Jakarta Selatan</a>
+                                <a href="#">Jakarta Timur</a>
+                                <a href="#">Jakarta Barat</a>
+                                <a href="#">Jakarta Pusat</a>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Bali</button>
+                            <div class="dropdown-container">
+                                <a href="#">Denpasar</a>
+                                <a href="#">Badung</a>
+                                <a href="#">Gianyar</a>
+                                <a href="#">Buleleng</a>
+                                <a href="#">Tabanan</a>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Jawa Barat</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Jawa Timur</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Sumatera Utara</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Bangka Belitung</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Banten</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Bengkulu</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>DI Yogyakarta</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Gorontalo</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Jambi</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Jawa Tengah</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Kalimantan Barat</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Kalimantan Selatan</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Kalimantan Tengah</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Kalimantan Timur</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Kalimantan Utara</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Kepulauan Riau</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Lampung</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Maluku</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Jawa Barat</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Maluku Utara</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Nanggroe Aceh Darussalam(NAD)</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Nusa Tenggara Barat(NTB)</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Nusa Tenggara Timur(NTT)</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Papua</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Papua Barat</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Riau</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Sulawesi Barat</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Sulawesi Selatan</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Sulawesi Tengah</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Sulawesi Tenggara</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Sulawesi Utara</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Sumatera Barat</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><span class="caret"></span>Sumatera Selatan</button>
+                            <div class="dropdown-container">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-10">
+                    <div class="sub-title">
+                        <div class="desc">
+                            <p>Viewing 1 - 20 of 61 active members</p>
+                        </div>
+                        <div class="order">
+                            <div class="dropdown">
+                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Order
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Name (A-Z)</a>
+                                  <a class="dropdown-item" href="#">Name (Z-A)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-advisor">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card" style="width: 21rem;">
+                                    <div class="card-body">
+                                        <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/NoPath.png" class="img-circle" style="width: 200px;" alt="">
+                                    </div>
+                                    <div class="card-body text-center">
+                                      <h3>Marlina Manurung</h3>
+                                      <p>+6285222269679</p>
+                                      <p>hrd.ga@id.knightfrank.com</p>
+                                      <a href="#">View More&nbsp;<i class="fa fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" style="width: 21rem;">
+                                    <div class="card-body">
+                                        <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/NoPath.png" class="img-circle" style="width: 200px;" alt="">
+                                    </div>
+                                    <div class="card-body text-center">
+                                      <h3>Ipung Rachmaningtyas</h3>
+                                      <p>+628119771081</p>
+                                      <p>Ipung@id.knightfrank.com</p>
+                                      <a href="#">View More&nbsp;<i class="fa fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" style="width: 21rem;">
+                                    <div class="card-body">
+                                        <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/NoPath.png" class="img-circle" style="width: 200px;" alt="">
+                                    </div>
+                                    <div class="card-body text-center">
+                                      <h3>Andhika Andaru</h3>
+                                      <p>+628119771078</p>
+                                      <p>andhika.andaru@id.knightfrank.com</p>
+                                      <a href="#">View More&nbsp;<i class="fa fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" style="width: 21rem;">
+                                    <div class="card-body">
+                                        <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/NoPath.png" class="img-circle" style="width: 200px;" alt="">
+                                    </div>
+                                    <div class="card-body text-center">
+                                      <h3>Hasan Pamudji</h3>
+                                      <p>+6281284763166</p>
+                                      <p>hasan.pamudji@closebuy.asia</p>
+                                      <a href="#">View More&nbsp;<i class="fa fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" style="width: 21rem;">
+                                    <div class="card-body">
+                                        <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/NoPath.png" class="img-circle" style="width: 200px;" alt="">
+                                    </div>
+                                    <div class="card-body text-center">
+                                      <h3>Adit Harun</h3>
+                                      <p>+6289508553388</p>
+                                      <p>harunadithya@gmail.com</p>
+                                      <a href="#">View More&nbsp;<i class="fa fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Footer -->
+    <section class="section-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer1">
+                    <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/logo1.png" height="75" alt="">
+                    <div class="submenu">
+                        <table>
+                            <tr>
+                                <td>About</td>
+                                <td>FAQ</td>
+                            </tr>
+                            <tr>
+                                <td>Term of Use</td>
+                                <td>Events</td>
+                            </tr>
+                            <tr>
+                                <td>Privacy Policy</td>
+                                <td>Newletters</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-4 footer2">
+                    <h5>Contact Us</h5>
+                    <div class="icon-flex">
+                        <div class="iconright">
+                            <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/email 1.png" width="20px" alt="">
+                            <div class="twoicon">
+                                <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/instagram.png" width="20px" alt="">
+                                <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/facebook1.png" width="20px" alt="">
+                            </div>
+                        </div>
+                        <div class="iconleft">
+                                <p class="support">support@closebuy.asia</p>
+                                <p class="buy">closebuy_property</p>
+                        </div>
+                    </div>
+                    <div class="subscribe">
+                        <h5>Subscribe To Our Newsletter</h5>
+                        <div class="mailform">
+                            <input type="text" class="formTerm" placeholder="Type Your Email Here...">
+                            <button type="submit" class="formButton">
+                                <i class="fas fa-envelope"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 footer3">
+                    <h5>Experience CloseBuy Now</h5>
+                    <div class="download">
+                        <button class="btn btn-dark">
+                            <div class="btn-flex">
+                                <div class="btnleft">
+                                    <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/playstore.png" height="30" alt="">
+                                </div>
+                                <div class="btnright">
+                                    <span class="d-inline-block text-left">
+                                        <small class="d-block">Get it on the</small>
+                                        Google Play
+                                    </span>
+                                </div>
+                            </div>
+                        </button>
+                        <button class="btn btn-dark">
+                            <div class="btn-flex">
+                                <div class="btnleft">
+                                    <i class="fab fa-apple"></i>
+                                </div>
+                                <div class="btnright">
+                                    <span class="d-inline-block text-left">
+                                        <small class="d-block">Available on the</small>
+                                        App Store
+                                    </span>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="barcode">
+                        <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/closebuy_qr.png"  alt="">
+                        <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/closebuy_qr.png"  alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    
+    <!-- Sidebar Dropdown -->
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+    </script>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>                
+</body>
+</html>

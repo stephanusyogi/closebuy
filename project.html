@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Close Buy</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet/less" type="text/css"  href="./assets/css/project.less">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- LESS -->
+    <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/922eb8e20d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- Section Menu -->
+    <section class="section-menu">
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/logo_green.png" height="30" alt="">
+            </a>
+            <form class="form-inline">
+                <input type="text" class="searchTerm" placeholder="Search by Address">
+                <button type="submit" class="searchButton">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <div class="d-flex align-items-center">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item nav-hover">
+                        <a class="nav-link" href="listing.html">Listing
+                        </a>
+                    </li>
+                    <li class="nav-item nav-hover">
+                        <a class="nav-link" href="wanted.html">Wanted
+                        </a>
+                    </li>
+                    <li class="nav-item-active mr-5">
+                        <a class="nav-link" href="#">Project
+                            <span>0</span></a>
+                    </li>
+                    <li class="nav-item nav-hover">
+                        <a class="nav-link" href="event.html">Event</a>
+                    </li>
+                    <li class="nav-item nav-hover mr-5">
+                        <a class="nav-link" href="newsletter.html">Newsletter</a>
+                    </li>
+                    <li class="nav-item nav-dropdown mr-3">
+                        <div class="dropdown">
+                            <a href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="nav-dropdown-3" class="nav-link dropdown-toggle">Advisor&nbsp;</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="advisor.html">Find Advisor</a>
+                                <a class="dropdown-item" href="joinus.html">Join Us</a>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="nav-item vertical mr-3"></div>
+                    <div class="nav-item">
+                        <button type="button" class="btn btn-success mr-2" data-toggle="modal" data-target="#exampleModalCenter">Login</button>
+                    </div>
+                    <div class="nav-item">
+                        <div class="toggle-switch switch-vertical swit">
+                            <input id="toggle-a" type="radio" name="switch" checked="checked" value="EN">
+                            <input id="toggle-b" type="radio" name="switch" value="id">
+                            <span class="toggle-outside swit">
+                                <span class="toggle-inside">id</span>
+                            </span>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </section>        
+
+    <!-- Modal Login -->
+    <div class="modal fade modal-login" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <h2>Login</h2>
+                </div>
+                <div class="form-login">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Password">
+                    <button type="submit">Login</button>
+                </div>
+                <div class="break">
+                    <p>or login using</p>
+                </div>
+                <div class="btn-login">
+                    <button type="submit" class="blue-btn"><span><img src="https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/7_79vIap6SX.png?_nc_eui2=AeG5p9VNxCAZOCo-5K-eCIb1FL_YvFYdMLEUv9i8Vh0wsaWaE4nakYnuuNcGv6wfmgeeWxrFBo3x2XmuQ2gm0zjm" width="20" height="20" alt=""></span> Login</button>
+                    <button type="submit" class="white-btn"><span><img src="https://cdn.icon-icons.com/icons2/2119/PNG/512/google_icon_131222.png" height="20" width="20" alt=""></span> Masuk</button>
+                    <button type="submit" class="purple-btn"><span><img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/yahoo.png" height="20" alt=""></span> Login</button>
+                </div>
+                <div class="footer text-center">
+                    <a href="#">Forgot Password ?</a>
+                    <p>No Account ?</p>
+                    <p><span><a href="#">Register Now</a></span>&nbsp;for free</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>    
+
+    <!-- Main Section -->
+    <section class="main-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126438.33806399649!2d112.56174195188457!3d-7.978469457733269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd62822063dc2fb%3A0x78879446481a4da2!2sMalang%2C%20Kota%20Malang%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1614931147825!5m2!1sid!2sid" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <div class="button-opsi">
+                        <button type="button" class="green-btn">Residential</button>
+                        <button type="button" class="red-btn">Commercial</button>
+                        <button type="button" class="orange-btn">Industrial</button>
+                        <div class="btn-group ">
+                            <button type="button" class="white-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-sort-amount-up-alt"></i> Sort
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">most recent</a>
+                                <a class="dropdown-item" href="#">by price (lowest-highest)</a>
+                                <a class="dropdown-item" href="#">by price (highest-lowest)</a>
+                                <a class="dropdown-item" href="#">by land size (lowest-highest)</a>
+                                <a class="dropdown-item" href="#">by land size (highest-lowest)</a>
+                                <a class="dropdown-item" href="#">by building size (lowest-highest)</a>
+                                <a class="dropdown-item" href="#">by price (highest-lowest)</a>
+                            </div>
+                        </div>
+                        <button type="submit" class="white-btn">Filter<i class="fas fa-filter"></i></button>
+                    </div>
+                    <div class="description">
+                        <div class="descleft">
+                            <p>Displaying <b>0</b> property in this area</p>
+                        </div>
+                        
+                    </div>
+                    <div class="property-list">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Section Footer -->
+    <section class="section-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer1">
+                    <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/logo1.png" height="75" alt="">
+                    <div class="submenu">
+                        <table>
+                            <tr>
+                                <td>About</td>
+                                <td>FAQ</td>
+                            </tr>
+                            <tr>
+                                <td>Term of Use</td>
+                                <td>Events</td>
+                            </tr>
+                            <tr>
+                                <td>Privacy Policy</td>
+                                <td>Newletters</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-4 footer2">
+                    <h5>Contact Us</h5>
+                    <div class="icon-flex">
+                        <div class="iconright">
+                            <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/email 1.png" width="20px" alt="">
+                            <div class="twoicon">
+                                <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/instagram.png" width="20px" alt="">
+                                <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/facebook1.png" width="20px" alt="">
+                            </div>
+                        </div>
+                        <div class="iconleft">
+                                <p class="support">support@closebuy.asia</p>
+                                <p class="buy">closebuy_property</p>
+                        </div>
+                    </div>
+                    <div class="subscribe">
+                        <h5>Subscribe To Our Newsletter</h5>
+                        <div class="mailform">
+                            <input type="text" class="formTerm" placeholder="Type Your Email Here...">
+                            <button type="submit" class="formButton">
+                                <i class="fas fa-envelope"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 footer3">
+                    <h5>Experience CloseBuy Now</h5>
+                    <div class="download">
+                        <button class="btn btn-dark">
+                            <div class="btn-flex">
+                                <div class="btnleft">
+                                    <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/playstore.png" height="30" alt="">
+                                </div>
+                                <div class="btnright">
+                                    <span class="d-inline-block text-left">
+                                        <small class="d-block">Get it on the</small>
+                                        Google Play
+                                    </span>
+                                </div>
+                            </div>
+                        </button>
+                        <button class="btn btn-dark">
+                            <div class="btn-flex">
+                                <div class="btnleft">
+                                    <i class="fab fa-apple"></i>
+                                </div>
+                                <div class="btnright">
+                                    <span class="d-inline-block text-left">
+                                        <small class="d-block">Available on the</small>
+                                        App Store
+                                    </span>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="barcode">
+                        <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/closebuy_qr.png"  alt="">
+                        <img src="https://demo.gumcode.net/closebuy/public/themes/dist/img/closebuy_qr.png"  alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+
+</body>
+</html>
